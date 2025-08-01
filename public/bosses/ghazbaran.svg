@@ -1,0 +1,53 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="60" fill="#1a0a0a" stroke="#2a1a1a" stroke-width="2"/>
+  
+  <!-- Demon body -->
+  <ellipse cx="64" cy="82" rx="38" ry="28" fill="#cc3300"/>
+  
+  <!-- Demon head -->
+  <circle cx="64" cy="48" r="26" fill="#ff4400"/>
+  
+  <!-- Curved horns -->
+  <path d="M 42 30 Q 35 15 45 20 Q 50 25 42 30" fill="#330000"/>
+  <path d="M 86 30 Q 93 15 83 20 Q 78 25 86 30" fill="#330000"/>
+  
+  <!-- Eyes -->
+  <circle cx="56" cy="43" r="4" fill="#ffff00"/>
+  <circle cx="72" cy="43" r="4" fill="#ffff00"/>
+  <circle cx="56" cy="43" r="2" fill="#000000"/>
+  <circle cx="72" cy="43" r="2" fill="#000000"/>
+  
+  <!-- Mouth -->
+  <path d="M 52 56 Q 64 66 76 56" stroke="#000000" stroke-width="2" fill="none"/>
+  
+  <!-- Fangs -->
+  <polygon points="57,56 59,64 61,56" fill="#ffffff"/>
+  <polygon points="67,56 69,64 71,56" fill="#ffffff"/>
+  
+  <!-- Spikes on head -->
+  <polygon points="64,22 66,15 68,22" fill="#330000"/>
+  <polygon points="58,24 59,17 61,24" fill="#330000"/>
+  <polygon points="70,24 71,17 73,24" fill="#330000"/>
+  
+  <!-- Arms -->
+  <ellipse cx="32" cy="72" rx="9" ry="22" fill="#cc3300" transform="rotate(-25 32 72)"/>
+  <ellipse cx="96" cy="72" rx="9" ry="22" fill="#cc3300" transform="rotate(25 96 72)"/>
+  
+  <!-- Claws -->
+  <polygon points="25,80 21,88 27,85" fill="#330000"/>
+  <polygon points="103,80 107,88 101,85" fill="#330000"/>
+  
+  <!-- Fire aura -->
+  <circle cx="64" cy="64" r="57" fill="none" stroke="#ff6600" stroke-width="1.5" opacity="0.8" stroke-dasharray="3,3">
+    <animateTransform attributeName="transform" type="rotate" values="0 64 64;360 64 64" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Inner fire -->
+  <circle cx="64" cy="64" r="45" fill="none" stroke="#ffaa00" stroke-width="1" opacity="0.6" stroke-dasharray="2,2">
+    <animateTransform attributeName="transform" type="rotate" values="360 64 64;0 64 64" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Title -->
+  <text x="64" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ff6600" font-weight="bold">GHAZBARAN</text>
+</svg>

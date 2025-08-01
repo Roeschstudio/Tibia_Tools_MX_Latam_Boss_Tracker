@@ -1,0 +1,124 @@
+{
+  "bosses": [
+    {
+      "name": "Ferumbras",
+      "respawnTime": {
+        "min": 168,
+        "max": 336
+      },
+      "rarity": "Legendary"
+    },
+    {
+      "name": "Ghazbaran",
+      "respawnTime": {
+        "min": 168,
+        "max": 336
+      },
+      "rarity": "Legendary"
+    },
+    {
+      "name": "Morgaroth",
+      "respawnTime": {
+        "min": 168,
+        "max": 336
+      },
+      "rarity": "Legendary"
+    },
+    {
+      "name": "Orshabaal",
+      "respawnTime": {
+        "min": 168,
+        "max": 336
+      },
+      "rarity": "Legendary"
+    },
+    {
+      "name": "Gaz'haragoth",
+      "respawnTime": {
+        "min": 168,
+        "max": 336
+      },
+      "rarity": "Legendary"
+    },
+    {
+      "name": "Zulazza the Corruptor",
+      "respawnTime": {
+        "min": 48,
+        "max": 72
+      },
+      "rarity": "Rare"
+    },
+    {
+      "name": "Chizzoron the Distorter",
+      "respawnTime": {
+        "min": 48,
+        "max": 72
+      },
+      "rarity": "Rare"
+    },
+    {
+      "name": "Hirintror",
+      "respawnTime": {
+        "min": 48,
+        "max": 72
+      },
+      "rarity": "Rare"
+    },
+    {
+      "name": "Ocyakao",
+      "respawnTime": {
+        "min": 48,
+        "max": 72
+      },
+      "rarity": "Rare"
+    },
+    {
+      "name": "The Welter",
+      "respawnTime": {
+        "min": 48,
+        "max": 72
+      },
+      "rarity": "Rare"
+    },
+    {
+      "name": "Dharalion",
+      "respawnTime": {
+        "min": 24,
+        "max": 48
+      },
+      "rarity": "Uncommon"
+    },
+    {
+      "name": "Tyrn",
+      "respawnTime": {
+        "min": 24,
+        "max": 48
+      },
+      "rarity": "Uncommon"
+    },
+    {
+      "name": "Necropharus",
+      "respawnTime": {
+        "min": 24,
+        "max": 48
+      },
+      "rarity": "Uncommon"
+    },
+    {
+      "name": "The Handmaiden",
+      "respawnTime": {
+        "min": 24,
+        "max": 48
+      },
+      "rarity": "Uncommon"
+    },
+    {
+      "name": "The Imperor",
+      "respawnTime": {
+        "min": 24,
+        "max": 48
+      },
+      "rarity": "Uncommon"
+    }
+  ]
+}

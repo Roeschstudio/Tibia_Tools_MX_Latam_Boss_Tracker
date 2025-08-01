@@ -1,0 +1,61 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="60" fill="#0a0a1a" stroke="#1a1a2a" stroke-width="2"/>
+  
+  <!-- Lich body (robes) -->
+  <path d="M 64 45 L 45 85 Q 45 95 55 100 L 73 100 Q 83 95 83 85 L 64 45 Z" fill="#2a2a4a"/>
+  
+  <!-- Lich head (skull) -->
+  <circle cx="64" cy="40" r="22" fill="#e6e6e6"/>
+  
+  <!-- Eye sockets -->
+  <circle cx="57" cy="35" r="4" fill="#000000"/>
+  <circle cx="71" cy="35" r="4" fill="#000000"/>
+  
+  <!-- Glowing eyes -->
+  <circle cx="57" cy="35" r="2" fill="#00ff00"/>
+  <circle cx="71" cy="35" r="2" fill="#00ff00"/>
+  
+  <!-- Nasal cavity -->
+  <polygon points="64,40 62,48 66,48" fill="#000000"/>
+  
+  <!-- Jaw -->
+  <rect x="58" y="48" width="12" height="4" fill="#d6d6d6"/>
+  
+  <!-- Teeth -->
+  <rect x="59" y="48" width="1" height="3" fill="#ffffff"/>
+  <rect x="61" y="48" width="1" height="3" fill="#ffffff"/>
+  <rect x="63" y="48" width="1" height="3" fill="#ffffff"/>
+  <rect x="65" y="48" width="1" height="3" fill="#ffffff"/>
+  <rect x="67" y="48" width="1" height="3" fill="#ffffff"/>
+  <rect x="69" y="48" width="1" height="3" fill="#ffffff"/>
+  
+  <!-- Hood -->
+  <path d="M 42 25 Q 64 15 86 25 Q 86 35 80 40 Q 64 30 48 40 Q 42 35 42 25" fill="#1a1a3a"/>
+  
+  <!-- Skeletal arms -->
+  <ellipse cx="40" cy="70" rx="6" ry="18" fill="#e6e6e6" transform="rotate(-20 40 70)"/>
+  <ellipse cx="88" cy="70" rx="6" ry="18" fill="#e6e6e6" transform="rotate(20 88 70)"/>
+  
+  <!-- Hands -->
+  <circle cx="35" cy="80" r="4" fill="#e6e6e6"/>
+  <circle cx="93" cy="80" r="4" fill="#e6e6e6"/>
+  
+  <!-- Staff -->
+  <rect x="30" y="60" width="2" height="25" fill="#4a3a2a"/>
+  <circle cx="31" cy="58" r="3" fill="#6a5a4a"/>
+  <polygon points="28,55 31,50 34,55" fill="#8a7a6a"/>
+  
+  <!-- Necromantic aura -->
+  <circle cx="64" cy="64" r="58" fill="none" stroke="#00ff88" stroke-width="1" opacity="0.7" stroke-dasharray="5,5">
+    <animateTransform attributeName="transform" type="rotate" values="0 64 64;360 64 64" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Dark energy -->
+  <circle cx="64" cy="64" r="48" fill="none" stroke="#004400" stroke-width="1" opacity="0.5" stroke-dasharray="3,3">
+    <animateTransform attributeName="transform" type="rotate" values="360 64 64;0 64 64" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Title -->
+  <text x="64" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#00ff88" font-weight="bold">NECROPHARUS</text>
+</svg>

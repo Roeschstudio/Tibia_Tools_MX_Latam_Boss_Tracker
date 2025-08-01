@@ -1,0 +1,41 @@
+{
+  "tailwindCSS.includeLanguages": {
+    "typescript": "typescript",
+    "javascript": "javascript",
+    "typescriptreact": "typescriptreact",
+    "javascriptreact": "javascriptreact"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+    ["cn\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+  "tailwindCSS.validate": true,
+  "tailwindCSS.lint.cssConflict": "warning",
+  "tailwindCSS.lint.invalidApply": "error",
+  "tailwindCSS.lint.invalidConfigPath": "error",
+  "tailwindCSS.lint.invalidScreen": "error",
+  "tailwindCSS.lint.invalidTailwindDirective": "error",
+  "tailwindCSS.lint.invalidVariant": "error",
+  "tailwindCSS.lint.recommendedVariantOrder": "warning",
+  "css.validate": false,
+  "scss.validate": false,
+  "less.validate": false,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "emmet.includeLanguages": {
+    "typescript": "html",
+    "typescriptreact": "html",
+    "javascript": "html",
+    "javascriptreact": "html"
+  },
+  "tailwindCSS.showPixelEquivalents": true,
+  "tailwindCSS.rootFontSize": 16,
+  "css.customData": [".vscode/css_custom_data.json"],
+  "typescript.preferences.includePackageJsonAutoImports": "auto",
+  "typescript.suggest.autoImports": true,
+  "typescript.suggest.includeAutomaticOptionalChainCompletions": true,
+  "typescript.suggest.includeCompletionsForImportStatements": true,
+  "typescript.preferences.importModuleSpecifier": "relative"
+}

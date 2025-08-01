@@ -1,0 +1,17 @@
+{
+  "Ferumbras": {
+    "world": "Antica",
+    "lastSeen": "2023-12-15T14:30:00.000Z",
+    "updatedAt": "2023-12-15T14:35:00.000Z"
+  },
+  "Morgaroth": {
+    "world": "Secura",
+    "lastSeen": "2023-12-10T08:15:00.000Z",
+    "updatedAt": "2023-12-10T08:20:00.000Z"
+  },
+  "Ghazbaran": {
+    "world": "Monza",
+    "lastSeen": "2023-12-12T22:45:00.000Z",
+    "updatedAt": "2023-12-12T22:50:00.000Z"
+  }
+}

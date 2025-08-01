@@ -1,26 +1,174 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 17, 24, 39;
+    --background-end-rgb: 10, 15, 25;
+    --accent-color: 129, 140, 248;
+    --accent-glow: 79, 70, 229;
+    --glass-bg: rgba(15, 23, 42, 0.6);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-shadow: rgba(0, 0, 0, 0.25);
+  }
+
+  /* Estilos base */
+  body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+        to bottom,
+        rgb(var(--background-start-rgb)),
+        rgb(var(--background-end-rgb))
+      );
+    min-height: 100vh;
+  }
+
+  /* Estilos para scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(15, 23, 42, 0.3);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(var(--accent-color), 0.5);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(var(--accent-color), 0.8);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  /* Glassmorphism */
+  .glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 8px 32px 0 var(--glass-shadow);
+    border-radius: 10px;
+  }
+
+  .glass-card {
+    @apply glass p-6 transition-all duration-300 hover:shadow-lg;
+  }
+
+  /* Efectos de neón */
+  .neon-text {
+    color: rgb(var(--accent-color));
+    text-shadow: 0 0 5px rgba(var(--accent-glow), 0.5),
+                0 0 10px rgba(var(--accent-glow), 0.3);
+  }
+
+  .neon-border {
+    border: 1px solid rgb(var(--accent-color));
+    box-shadow: 0 0 5px rgba(var(--accent-glow), 0.5),
+                inset 0 0 5px rgba(var(--accent-glow), 0.3);
+  }
+
+  /* Estilos para inputs */
+  input, select, textarea {
+    @apply bg-slate-800 border border-slate-700 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent;
+  }
+
+  /* Estilos para botones */
+  .btn {
+    @apply px-4 py-2 rounded-md transition-all duration-200 font-medium;
+  }
+
+  .btn-primary {
+    @apply bg-indigo-600 hover:bg-indigo-700 text-white;
+  }
+
+  .btn-secondary {
+    @apply bg-slate-700 hover:bg-slate-800 text-white;
+  }
+
+  .btn-outline {
+    @apply border border-indigo-500 text-indigo-400 hover:bg-indigo-500 hover:text-white;
+  }
+
+  /* Estilos para tablas */
+  table {
+    @apply w-full border-collapse;
+  }
+
+  thead {
+    @apply bg-slate-800;
+  }
+
+  th {
+    @apply px-4 py-2 text-left text-sm font-medium text-gray-300;
+  }
+
+  td {
+    @apply px-4 py-2 border-t border-slate-700 text-sm;
+  }
+
+  tr:hover {
+    @apply bg-slate-800/50;
+  }
+
+  /* Estilos para tarjetas */
+  .card {
+    @apply glass-card mb-4;
+  }
+
+  .card-header {
+    @apply text-xl font-bold mb-4 pb-2 border-b border-slate-700;
+  }
+
+  .card-body {
+    @apply py-2;
+  }
+
+  .card-footer {
+    @apply pt-4 mt-4 border-t border-slate-700 flex justify-between items-center;
+  }
+}
+
+@layer utilities {
+  /* Animaciones */
+  @keyframes pulse-glow {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.6;
+    }
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .loading-spinner {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    border: 0.25rem solid rgba(var(--accent-color), 0.3);
+    border-top-color: rgb(var(--accent-color));
+    animation: spin 1s linear infinite;
+  }
+
+  /* Estilos para loading */
+  .loading-pulse {
+    @apply animate-pulse bg-slate-700 rounded-md;
+  }
 }
