@@ -39,7 +39,7 @@ export function useCharacterDeath(name: string) {
         }
         
         // Llamar a la API de TibiaData para obtener información del personaje
-        const response = await fetch(`https://api.tibiadata.com/v4/character/${encodeURIComponent(name)}`);
+        const response = await fetch(`https://api.tibiadata.com/v5/character/${encodeURIComponent(name)}`);
         
         if (!response.ok) {
           throw new Error(`Error fetching character data: ${response.status}`);

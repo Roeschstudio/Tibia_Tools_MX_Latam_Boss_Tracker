@@ -39,7 +39,7 @@ export interface TibiaCharacterResponse {
 }
 
 // Configuración de la API
-const TIBIADATA_BASE_URL = 'https://api.tibiadata.com/v4';
+const TIBIADATA_BASE_URL = 'https://api.tibiadata.com/v5';
 const REQUEST_HEADERS = {
   'User-Agent': 'TibiaBossTracker/1.0',
   'Accept': 'application/json',
