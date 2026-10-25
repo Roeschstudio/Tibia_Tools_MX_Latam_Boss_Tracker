@@ -41,7 +41,7 @@ export function useDeathLog(world: string) {
         }
         
         // Llamar a la API de TibiaData
-        const response = await fetch(`https://api.tibiadata.com/v4/killstatistics/${world}`);
+        const response = await fetch(`https://api.tibiadata.com/v5/killstatistics/${world}`);
         
         if (!response.ok) {
           throw new Error(`Error fetching death log: ${response.status}`);
